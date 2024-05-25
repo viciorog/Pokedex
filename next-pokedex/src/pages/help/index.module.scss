@@ -1,0 +1,115 @@
+.Help {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 200px;
+    align-items: center;
+
+    .p {
+      width: 50%;
+      font-size: 2rem;
+    }
+
+    .form {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+      height: 50px;
+
+      .inputPokemon,
+      .btnPokemon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 24px;
+        box-sizing: content-box;
+        border: 0;
+        border-radius: 12px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+        font-weight: bold;
+        outline: none;
+      }
+
+      .btnPokemon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .title {
+      margin-top: 10%;
+      font-size: 1rem;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin: 0 auto;
+
+      .p {
+        font-size: 1rem;
+        width: 100%;
+        padding-left: 5%;
+      }
+
+      .form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 5%;
+        margin-bottom: 0;
+
+        .inputPokemon {
+          display: flex;
+          justify-content: center;
+          height: 10px;
+          align-items: center;
+          padding: 12px 24px;
+          box-sizing: content-box;
+          border: 0;
+          border-radius: 12px;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+          font-weight: bold;
+          outline: none;
+        }
+        .btnPokemon {
+          display: flex;
+          width: 10px;
+          height: 10px;
+          justify-content: center;
+          align-items: center;
+          padding: 12px 24px;
+          box-sizing: content-box;
+          border: 0;
+          border-radius: 12px;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+          font-weight: bold;
+          outline: none;
+        }
+
+        .btnPokemon {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .Image {
+      width: 350px;
+      height: 230px;
+    }
+  }
+}

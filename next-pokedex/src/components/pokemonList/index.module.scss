@@ -1,0 +1,32 @@
+.PokemonList {
+  width: 100%;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .title {
+      display: flex;
+      padding-left: 15%;
+      color: white;
+    }
+
+    .list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+}
