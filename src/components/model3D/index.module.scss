@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/08/Pokemon-Pokedex.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+}

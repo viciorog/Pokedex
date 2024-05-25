@@ -1,0 +1,253 @@
+.Pokedex {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(58, 180, 138);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 180, 138, 1) 0%,
+    rgba(29, 240, 253, 1) 50%,
+    rgba(69, 85, 252, 1) 100%
+  );
+
+  .ImgLogo {
+    position: relative;
+
+    top: 15px;
+  }
+
+  .ImgPokedex {
+    position: relative;
+    width: 830px;
+    height: 507px;
+    bottom: 105px;
+  }
+
+  .container_sprites {
+    position: relative;
+
+    width: 260px;
+    height: 140px;
+    top: 195px;
+    right: 195px;
+    z-index: 1000;
+
+    .sprites {
+      position: absolute;
+      width: 80px;
+      left: 85px;
+      bottom: 7px;
+
+      &:hover {
+        transform: rotate(1deg);
+      }
+    }
+  }
+
+  .title {
+    position: relative;
+    bottom: 445px;
+    left: 221px;
+    color: white;
+  }
+
+  .type {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    bottom: 461px;
+    left: 220px;
+    color: white;
+
+    &::before {
+      content: "Type: ";
+      color: lightseagreen;
+      font-size: 1.1rem;
+    }
+  }
+
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    bottom: 467px;
+    left: 205px;
+    width: 245px;
+
+    .inputPokemon {
+      width: 100%;
+      padding: 8.3%;
+      outline: none;
+      border: 2px solid #333;
+      border-radius: 5px;
+      font-weight: 600;
+      color: #3a444d;
+      font-size: clamp(8px, 5vw, 1rem);
+      box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    }
+  }
+
+  .info {
+    position: relative;
+    font-size: 0.7rem;
+    bottom: 445px;
+    right: 235px;
+  }
+
+  .buttons {
+    position: relative;
+    bottom: 395px;
+    width: 290px;
+    left: 222px;
+    display: flex;
+    gap: 18px;
+
+    .button {
+      width: 200px;
+      padding: 4%;
+      border: 2px solid #000;
+      font-size: clamp(8px, 5vw, 1rem);
+      font-weight: 600;
+      color: white;
+      background-color: #444;
+      box-shadow: -3px 4px 0 #222, -5px 7px 0 #000;
+
+      &:active {
+        box-shadow: inset -4px 4px 0 #222;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  // responsive
+
+  @media only screen and (max-width: 480px) {
+    .ImgLogo {
+      position: relative;
+      width: 350px;
+      height: 100px;
+      top: 15px;
+    }
+
+    .ImgPokedex {
+      position: relative;
+      width: 370px;
+      height: 230px;
+      bottom: 0px;
+    }
+
+    .container_sprites {
+      position: relative;
+
+      width: 113px;
+      height: 70px;
+      top: 135px;
+      right: 90px;
+      z-index: 1000;
+
+      .sprites {
+        position: absolute;
+        width: 40px;
+        left: 38px;
+        bottom: 2px;
+
+        &:hover {
+          transform: rotate(1deg);
+        }
+      }
+    }
+
+    .title {
+      position: relative;
+      font-size: 0.7rem;
+      bottom: 158px;
+      left: 98px;
+      color: white;
+    }
+
+    .type {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      bottom: 162px;
+      left: 96px;
+      color: white;
+      font-size: 0.4rem;
+
+      &::before {
+        content: "Type: ";
+        color: lightseagreen;
+        font-size: 0.5rem;
+      }
+    }
+
+    .form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+      bottom: 181px;
+      left: 117px;
+      width: 160px;
+
+      .inputPokemon {
+        width: 100px;
+        height: 1px;
+        padding: 8.3%;
+        outline: none;
+        border: 2px solid #333;
+        border-radius: 5px;
+        font-weight: 600;
+        color: #3a444d;
+        font-size: clamp(8px, 5vw, 0.8rem);
+        box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+      }
+    }
+
+    .info {
+      position: relative;
+      font-size: 0.31rem;
+      bottom: 178px;
+      right: 105px;
+    }
+
+    .buttons {
+      position: relative;
+      bottom: 158px;
+      left: 120px;
+      width: 130px;
+      transform: translate(-16%, 0);
+      display: flex;
+      gap: 10px;
+
+      .button {
+        width: 90px;
+        height: 20px;
+        padding: 0;
+        border: 2px solid #000;
+        font-size: clamp(5px, 4vw, 0.8rem);
+        font-weight: 600;
+        color: white;
+        background-color: #444;
+        box-shadow: -1px 2px 0 #222, -3px 5px 0 #000;
+
+        &:active {
+          box-shadow: inset -2px 2px 0 #222;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
